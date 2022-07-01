@@ -1,3 +1,3 @@
-import { convertDigitsFaToEn } from "./convertFaToEn";
-
-export { convertDigitsFaToEn }
+import { convertDigitsFaToEn } from './convertFaToEn';
+import { convertDigitsEnToFa } from './convertEnToFa';
+export { convertDigitsFaToEn, convertDigitsEnToFa };
