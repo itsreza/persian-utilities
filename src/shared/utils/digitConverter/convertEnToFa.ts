@@ -1,4 +1,4 @@
-import { englishNumbersArray, englishDigitsRegex, persianNumbersArray } from '../constants/digits/index.constants';
+import { englishNumbersArray, englishDigitsRegex, persianNumbersArray } from '../../constants/digits/index.constants';
 
 /**
  * @category Utils
@@ -6,8 +6,8 @@ import { englishNumbersArray, englishDigitsRegex, persianNumbersArray } from '..
  * @param number Persian entry number
  * @returns Persian Number is Equal With English
  */
-const convertDigitsEnToFa = (number: String): String => {
-    if (!number || typeof number === 'number') throw TypeError('Entry Argument Should be Valid With String Type For `convertDigitsFaToEn` Method');
+const convertDigitsEnToFa = (number: string): string | any => {
+    if (!number || typeof number !== 'string') throw TypeError('Entry Argument Should be Valid With String Type For `convertDigitsFaToEn` Method');
     const convertedToPersian = number.replace(englishDigitsRegex, (number: string): string => {
         const indexed = englishNumbersArray.indexOf(number);
         return String(persianNumbersArray[indexed]);
