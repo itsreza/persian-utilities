@@ -1,8 +1,7 @@
-// import { digitsEnToFa, digitsFaToEn, digitsFaToAr, digitsArToFa, digitsArToEn, digitsEnToAr } from "../src";
 import { convertDigitsEnToFa } from "../../../../shared/utils/digitConverter/index"
+
 describe("Digits converter En To Fa", () => {
    
-
 	test("Convert Simple Numbers from English to Persian", () => {
         const englishNumber = "0123456789"
         const persianNumber = "۰۱۲۳۴۵۶۷۸۹"
@@ -30,7 +29,7 @@ describe("Digits converter En To Fa", () => {
 		try{
 			convertDigitsEnToFa(invalidArgumentType)
 		} catch (error){
-			expect(error.message).toBe(correctErrorMessage)
+			expect(error?.message).toBe(correctErrorMessage)
 		}
 	});
 });

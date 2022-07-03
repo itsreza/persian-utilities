@@ -1,8 +1,12 @@
-import persianCardValidation from './modules/CardValidation';
+import persianCardValidation from './modules/creditCardValidation';
 import { convertDigitsFaToEn, convertDigitsEnToFa } from './shared/utils/digitConverter/index';
 
 // console.log(persianCardValidation('۱۲۳۴۵۶۷۸۹۰'), 'Hello TypeScript Starter but not working fine');
 
+const result = persianCardValidation("6219861054507081")
+console.log(result);
+
+export { persianCardValidation , convertDigitsFaToEn , convertDigitsEnToFa}
 
 // // Digits Converter
 // export * from "./modules/digits";
