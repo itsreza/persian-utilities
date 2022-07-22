@@ -1,16 +1,16 @@
 import persianCardValidation from './modules/creditCardValidation';
 import { convertDigitsFaToEn, convertDigitsEnToFa } from './shared/utils/digitConverter/index';
-import {timeAgo} from "./modules/timeAgo"
+import { timeAgo } from './modules/timeAgo';
 
 // console.log(persianCardValidation('۱۲۳۴۵۶۷۸۹۰'), 'Hello TypeScript Starter but not working fine');
 
 // const result = persianCardValidation("6219861054507081")
 // console.log(result);
 
-const time = timeAgo("۱۴۰۱/۰۴/۲۹ 16:08:00")
-console.log({result : time});
+const time = timeAgo('۱۴۰۱/۰۴/۲۹ 16:08:00');
+console.log({ result: time });
 
-export { persianCardValidation , convertDigitsFaToEn , convertDigitsEnToFa}
+export { persianCardValidation, convertDigitsFaToEn, convertDigitsEnToFa, timeAgo };
 
 // // Digits Converter
 // export * from "./modules/digits";
