@@ -1,9 +1,3 @@
-// import { hasPersian } from "../isPersian";
-// import { digitsFaToEn } from "../digits";
-// import verifyCardNumber from "../verifyCardNumber";
-// import { acceptableKeywords, cardNumberRegex } from "./utils";
-// import getBankNameFromCardNumber from "../getBankNameFromCardNumber";
-
 import { convertDigitsFaToEn } from '../../shared/utils/digitConverter';
 import bankCreditCards from '../../shared/constants/‌bankCreditCards/index.constants';
 interface InterfaceExtractCardDetail {
