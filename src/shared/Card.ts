@@ -10,16 +10,16 @@
  *
  * @constant
  */
- export const cardNumberRegex = new RegExp("([\u06F0-\u06F90-9-_.*]{16,20})", "img");
- /**
-  * Acceptable keywords between numbers are:
-  * 1. Star -> *
-  * 2. Underscore -> _
-  * 3. Dash -> -
-  * 4. Dot -> .
-  *
-  * @example:
-  * 5022*2910_7087-3466
-  * @constant
-  */
- export const acceptableKeywords = /[-_.*]/g;
+export const cardNumberRegex = new RegExp('([\u06F0-\u06F90-9-_.*]{16,20})', 'img');
+/**
+ * Acceptable keywords between numbers are:
+ * 1. Star -> *
+ * 2. Underscore -> _
+ * 3. Dash -> -
+ * 4. Dot -> .
+ *
+ * @example:
+ * 5022*2910_7087-3466
+ * @constant
+ */
+export const acceptableKeywords = /[-_.*]/g;

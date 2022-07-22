@@ -1,4 +1,3 @@
-
 // Inner Helper Content Should be Here.
 
 // export const trim = (str: string): string => str.replace(/^\s+|\s+$/g, "");
