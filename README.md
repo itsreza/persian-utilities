@@ -17,7 +17,13 @@ Clone Project From Github.
 git clone https://github.com/itsreza/persian-utils.git
 ```
 
-> Soon Added On Npm Package Manager
+or
+
+### NPM
+
+```
+npm install persian-utilities
+```
 
 ## Usage
 

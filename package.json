@@ -1,8 +1,8 @@
 {
-  "name": "persian-utils",
-  "version": "1.0.0",
-  "description": "Persian utils using for persian application lang UTF8",
-  "main": "index.js",
+  "name": "persian-utilities",
+  "version": "1.0.1",
+  "description": "Persian utilities using for persian application lang UTF8",
+  "main": "./build/index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
     "start:dev": "nodemon",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/itsreza/persian-utils.git"
+    "url": "git+ssh://git@github.com/itsreza/persian-utilities.git"
   },
   "husky": {
     "hooks": {
@@ -34,7 +34,8 @@
     "Language",
     "English",
     "UTF8",
-    "Convert"
+    "Convert",
+    "utilities"
   ],
   "author": "itsreza",
   "license": "MIT",
