@@ -1,6 +1,6 @@
-import { convertDigitsFaToEn } from "../digitConverter";
-import convertDateAndTimeToTimeStamp from "./convertDateAndTimeToTimeStamp";
-import getCurrentPersianTime from "./getCurrentPersianTime";
+import { convertDigitsFaToEn } from '../digitConverter';
+import convertDateAndTimeToTimeStamp from './convertDateAndTimeToTimeStamp';
+import getCurrentPersianTime from './getCurrentPersianTime';
 
 interface InterfaceDiffBetweenDateWithNow {
     days: number;
@@ -33,6 +33,5 @@ const getDiffBetweenTimeStampsToNow = (oldTimeStamp: number): InterfaceDiffBetwe
         seconds: secondsDifference
     };
 };
-
 
 export default getDiffBetweenTimeStampsToNow;
