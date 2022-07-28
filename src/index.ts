@@ -1,7 +1,10 @@
 import persianCardValidation from './modules/creditCardValidation';
 import { convertDigitsFaToEn, convertDigitsEnToFa } from './shared/utils/digitConverter/index';
 import { timeAgo } from './modules/timeAgo';
+import {default as isNationalID} from './modules/nationalIDValidation';
 
-console.log(persianCardValidation("6219861054507081"))
+console.log(isNationalID("0018661300"))
 
-export { persianCardValidation, convertDigitsFaToEn, convertDigitsEnToFa, timeAgo };
+
+
+export { persianCardValidation, convertDigitsFaToEn, convertDigitsEnToFa, timeAgo , isNationalID };

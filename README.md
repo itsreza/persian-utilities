@@ -1,4 +1,4 @@
-# persian-utils
+# persian-utilities
 
 Persian Modules need to Improved Application.</br>
 Collections of Persian Utils And Helpers Function.
@@ -11,37 +11,35 @@ Collections of Persian Utils And Helpers Function.
 
 ## Install
 
-Clone Project From Github.
+### NPM
 
 ```
-git clone https://github.com/itsreza/persian-utils.git
+npm install persian-utilities
 ```
-
-> Soon Added On Npm Package Manager
 
 ## Usage
 
-Import `Persian-Utils` into your app's modules or import ES modules With Name
+Import `persian-utilities` into your app's modules or import ES modules With Name
 
 ## Apis
 
 ### convertDigitsFaToEn
 
 ```javascript
-import { convertDigitsFaToEn } from 'persian-utils';
+import { convertDigitsFaToEn } from 'persian-utilities';
 convertDigitsFaToEn('۱۲۳۴'); // result 1234
 ```
 
 ### convertDigitsEnToFa
 
 ```javascript
-import { convertDigitsEnToFa } from 'persian-utils';
+import { convertDigitsEnToFa } from 'persian-utilities';
 convertDigitsFaToEn('1234'); // result ۱۲۳۴
 ```
 
 ### persianCardValidation
 
 ```javascript
-import { persianCardValidation } from 'persian-utils';
+import { persianCardValidation } from 'persian-utilities';
 persianCardValidation('6219861054512345'); // result {bankName : "بانک سامان"}
 ```
