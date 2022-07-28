@@ -3,8 +3,8 @@ import convertDateAndTimeToTimeStamp from '../../shared/utils/times/convertDateA
 import getDiffBetweenTimeStampsToNow from '../../shared/utils/times/getDiffBetweenTimeStampsToNow';
 
 export function timeAgo(date: string, isExact?: boolean): string | object {
-    const oldtime = convertDateAndTimeToTimeStamp(convertDigitsFaToEn(date));
-    const { days, hours, minutes, seconds } = getDiffBetweenTimeStampsToNow(oldtime);
+    const olderDate = convertDateAndTimeToTimeStamp(convertDigitsFaToEn(date));
+    const { days, hours, minutes, seconds } = getDiffBetweenTimeStampsToNow(olderDate);
     if (isExact) {
         const times = { روز: days, ساعت: hours, دقیقه: minutes, ثانیه: seconds };
         const separatedTime: string[] = [];
