@@ -3,6 +3,4 @@ import { convertDigitsFaToEn, convertDigitsEnToFa } from './shared/utils/digitCo
 import { timeAgo } from './modules/timeAgo';
 import { default as isNationalID } from './modules/nationalIDValidation';
 
-console.log(isNationalID('0018661300'));
-
 export { persianCardValidation, convertDigitsFaToEn, convertDigitsEnToFa, timeAgo, isNationalID };
