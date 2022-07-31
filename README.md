@@ -5,9 +5,12 @@ Collections of Persian Utils And Helpers Function.
 
 ## Collections
 
--   **persian Card Validation With Banks**
--   **convertDigitsFaToEn**
--   **convertDigitsEnToFa**
+-   [**convertDigitsFaToEn**](#convertdigitsfatoen)
+-   [**convertDigitsEnToFa**](#convertdigitsentofa)
+-   [**persianCardValidation**](#persiancardvalidation)
+-   [**isNationalID**](#isnationalid)
+-   [**numericalSeparator**](#numericalseparator)
+-   [**numericalWithoutSeparator**](#numericalwithoutseparator)
 
 ## Install
 
@@ -27,19 +30,64 @@ Import `persian-utilities` into your app's modules or import ES modules With Nam
 
 ```javascript
 import { convertDigitsFaToEn } from 'persian-utilities';
-convertDigitsFaToEn('۱۲۳۴'); // result 1234
+convertDigitsFaToEn('۱۲۳۴'); // result : 1234
 ```
 
 ### convertDigitsEnToFa
 
 ```javascript
 import { convertDigitsEnToFa } from 'persian-utilities';
-convertDigitsFaToEn('1234'); // result ۱۲۳۴
+convertDigitsFaToEn('1234'); // result : ۱۲۳۴
 ```
 
 ### persianCardValidation
 
 ```javascript
 import { persianCardValidation } from 'persian-utilities';
-persianCardValidation('6219861054512345'); // result {bankName : "بانک سامان"}
+persianCardValidation('6219861054512345'); // result : {bankName : "بانک سامان" , isValid : true}
+```
+
+### isNationalID
+
+```javascript
+import { isNationalID } from 'persian-utilities';
+isNationalID('1111111111'); // result : true
+```
+
+### numericalSeparator
+
+```javascript
+import { numericalSeparator } from 'persian-utilities';
+numericalSeparator(entryNumber, separateLength?: number, separator?: string)
+```
+
+```javascript
+import { numericalSeparator } from 'persian-utilities';
+// without Passing Any Option
+numericalSeparator(100000); // result : 100,000
+// with Customized options
+numericalSeparator('10000', 2, '.'); // result : 1.00.00
+```
+
+#### numericalSeparator Arguments
+
+| index | argument                  | type             | default value |
+| ----- | ------------------------- | ---------------- | ------------- |
+| 1     | entryNumber               | string or number | -             |
+| 2     | separateLength (optional) | number           | 3             |
+| 3     | separator (optional)      | string           | ","           |
+
+### numericalWithoutSeparator
+
+```javascript
+import { numericalWithoutSeparator } from 'persian-utilities';
+numericalWithoutSeparator(numberWithSeparator: string, separator?: string)
+```
+
+```javascript
+import { numericalWithoutSeparator } from 'persian-utilities';
+// without Passing Any Option
+numericalWithoutSeparator(100000); // result : 100,000
+// with Customized options
+numericalWithoutSeparator(1.00.00 , "."); // result : 10000
 ```
