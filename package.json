@@ -1,6 +1,6 @@
 {
   "name": "persian-utilities",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Persian utilities using for persian application lang UTF8",
   "main": "./build/index.js",
   "scripts": {

@@ -8,8 +8,8 @@ var digitConverter_1 = require("../../shared/utils/digitConverter");
 var convertDateAndTimeToTimeStamp_1 = __importDefault(require("../../shared/utils/times/convertDateAndTimeToTimeStamp"));
 var getDiffBetweenTimeStampsToNow_1 = __importDefault(require("../../shared/utils/times/getDiffBetweenTimeStampsToNow"));
 function timeAgo(date, isExact) {
-    var oldtime = convertDateAndTimeToTimeStamp_1.default(digitConverter_1.convertDigitsFaToEn(date));
-    var _a = getDiffBetweenTimeStampsToNow_1.default(oldtime), days = _a.days, hours = _a.hours, minutes = _a.minutes, seconds = _a.seconds;
+    var olderDate = convertDateAndTimeToTimeStamp_1.default(digitConverter_1.convertDigitsFaToEn(date));
+    var _a = getDiffBetweenTimeStampsToNow_1.default(olderDate), days = _a.days, hours = _a.hours, minutes = _a.minutes, seconds = _a.seconds;
     if (isExact) {
         var times = { روز: days, ساعت: hours, دقیقه: minutes, ثانیه: seconds };
         var separatedTime = [];
