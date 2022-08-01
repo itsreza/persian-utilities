@@ -1,5 +1,9 @@
 # persian-utilities
 
+![alt text](typo.png)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 Persian Modules need to Improved Application.</br>
 Collections of Persian Utils And Helpers Function.
 
@@ -8,6 +12,7 @@ Collections of Persian Utils And Helpers Function.
 -   [**convertDigitsFaToEn**](#convertdigitsfatoen)
 -   [**convertDigitsEnToFa**](#convertdigitsentofa)
 -   [**persianCardValidation**](#persiancardvalidation)
+-   [**timeAgo**](#timeago)
 -   [**isNationalID**](#isnationalid)
 -   [**numericalSeparator**](#numericalseparator)
 -   [**numericalWithoutSeparator**](#numericalwithoutseparator)
@@ -45,6 +50,18 @@ convertDigitsFaToEn('1234'); // result : ۱۲۳۴
 ```javascript
 import { persianCardValidation } from 'persian-utilities';
 persianCardValidation('6219861054512345'); // result : {bankName : "بانک سامان" , isValid : true}
+```
+
+### timeAgo
+
+second argument set Exact option
+
+```javascript
+import { timeAgo } from 'persian-utilities';
+// not exact mode
+timeAgo('۱۴۰۱/۰۵/۰۹ ۱۰:۰۰'); // result : روز قبل 1
+// exact mode
+timeAgo('۱۴۰۱/۰۵/۰۹ ۱۰:۰۰', true); // result : ثانیه29 و ساعت2 و روز1
 ```
 
 ### isNationalID

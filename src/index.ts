@@ -6,6 +6,6 @@ import { default as isNationalID } from './modules/nationalIDValidation';
 import { numericalSeparator , numericalWithoutSeparator} from "./shared/utils/numerical"
 
 
-
+console.log(timeAgo("۱۴۰۱/۰۵/۰۹ ۱۰:۰۰" , false))
 
 export { persianCardValidation, convertDigitsFaToEn, convertDigitsEnToFa, timeAgo, isNationalID  , numericalSeparator , numericalWithoutSeparator };
