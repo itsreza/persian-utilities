@@ -43,6 +43,7 @@ const getFixedAndRemainingNumber = (number: number , separate): {remainingNumber
 
 const result: Array<string> = [];
 function numericalToWords(number: number) {
+    
 if(!number){
 throw new Error("Persian-Utilities Error : Number Should be Pass to numericalToWord Method.");
 }
@@ -127,7 +128,9 @@ if(pureNumber <= 99){
 // }
 
 // console.log({result})
-return result.join("")
+const str = result.join("")
+result.splice(0,result.length)
+return str;
 }
 
 export default numericalToWords;
