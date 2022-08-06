@@ -9,7 +9,7 @@ export const UNITS_WORDS_NUMERICAL: InterfaceWordsNumerical = {
     3: 'سه',
     4: 'چهار',
     5: 'پنج',
-    6: 'شیش',
+    6: 'شش',
     7: 'هفت',
     8: 'هشت',
     9: 'نه',
@@ -34,7 +34,7 @@ export const UNITS_WORDS_NUMERICAL: InterfaceWordsNumerical = {
   }
 
 export const HUNDRED_WORDS_NUMERICAL: InterfaceWordsNumerical = {
-    100: "صد",
+    100: "یکصد",
     200: "دویست",
     300: "سیصد",
     400: "چهارصد",
@@ -51,3 +51,10 @@ export const MAGNITUDE: InterfaceWordsNumerical = {
      1000000000 : "میلیارد",
      1000000000000 : "تریلیون"
 };
+
+
+export const HUNDRED = 100;
+export const THOUSAND = 1000
+export const MILLION = 1000000;
+export const BILLION = 1000000000;
+export const TRILLION = 1000000000000;
