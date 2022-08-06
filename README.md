@@ -16,6 +16,7 @@ Collections of Persian Utils And Helpers Function.
 -   [**isNationalID**](#isnationalid)
 -   [**numericalSeparator**](#numericalseparator)
 -   [**numericalWithoutSeparator**](#numericalwithoutseparator)
+-   [**wordifyNumbers**](#wordifynumbers)
 
 ## Install
 
@@ -107,4 +108,15 @@ import { numericalWithoutSeparator } from 'persian-utilities';
 numericalWithoutSeparator(100000); // result : 100,000
 // with Customized options
 numericalWithoutSeparator(1.00.00 , "."); // result : 10000
+```
+
+### wordifynumbers
+
+We Supported Entry Number Less Than 1 Trillion
+
+```javascript
+import { wordifynumbers } from 'persian-utilities';
+wordifynumbers(5620); // result : پنج هزار و ششصد و بیست
+wordifyNumbers(153000); // result : یکصد و پنجاه و سه هزار
+wordifyNumbers('۵۲۴۴۲۴۴۳۶۰۰'); // result : پنجاه و دو میلیارد و چهارصد و چهل و دو میلیون و چهارصد و چهل و سه هزار و ششصد
 ```
