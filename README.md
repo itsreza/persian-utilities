@@ -43,7 +43,7 @@ convertDigitsFaToEn('۱۲۳۴'); // result : 1234
 
 ```javascript
 import { convertDigitsEnToFa } from 'persian-utilities';
-convertDigitsFaToEn('1234'); // result : ۱۲۳۴
+convertDigitsEnToFa('1234'); // result : ۱۲۳۴
 ```
 
 ### persianCardValidation
