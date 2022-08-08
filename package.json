@@ -1,6 +1,6 @@
 {
   "name": "persian-utilities",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Persian utilities using for persian application lang UTF8",
   "main": "./build/index.js",
   "scripts": {
@@ -35,7 +35,14 @@
     "English",
     "UTF8",
     "Convert",
-    "utilities"
+    "utilities",
+    "persian-utilities",
+    "wordify-numbers",
+    "wordify-persian-numbers",
+    "time-ago",
+    "credit-card",
+    "iranian-bank",
+    "persian tools"
   ],
   "author": "itsreza",
   "license": "MIT",
