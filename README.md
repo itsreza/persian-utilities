@@ -17,6 +17,7 @@ Collections of Persian Utils And Helpers Function.
 -   [**numericalSeparator**](#numericalseparator)
 -   [**numericalWithoutSeparator**](#numericalwithoutseparator)
 -   [**wordifyNumbers**](#wordifynumbers)
+-   [**abbNumber**](#abbnumber)
 
 ## Install
 
@@ -120,3 +121,26 @@ wordifynumbers(5620); // result : پنج هزار و ششصد و بیست
 wordifyNumbers(153000); // result : یکصد و پنجاه و سه هزار
 wordifyNumbers('۵۲۴۴۲۴۴۳۶۰۰'); // result : پنجاه و دو میلیارد و چهارصد و چهل و دو میلیون و چهارصد و چهل و سه هزار و ششصد
 ```
+
+
+### abbNumber
+
+Convert long number into abbreviated string
+
+```javascript
+import { abbNumber } from 'persian-utilities';
+abbNumber(5620); // result : "5K"
+abbNumber(1530000); // result : "1M"    
+abbNumber(52100000,1); // result : "52.1M"
+```
+
+#### Large number abbreviations
+
+| number               | abbr   | name   |
+| -------------------- | ------ | ------ |
+| >10^3                | K      | kilo   |
+| >10^6                | M      | mega   |
+| >10^9                | G      | giga   |
+| >10^12               | T      | tera   |
+| >10^15               | P      | peta   |
+| >10^18               | E      | exa    |
